@@ -18,8 +18,16 @@ exemple :
 */
 
 function theaterSieges() {
-  // Your code here !
-}
+  const numbersCol = 26;
+  const numbersSiege = 100;
+  col = [];
+  for (let i = 1; i <= numbersCol; i++){
+    for (let j = 1; j <= numbersSiege; j++) {
+      col[i].push(j)
+    }
+  }
+  }
+  
 
 console.log(theaterSieges());
 
