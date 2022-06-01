@@ -18,17 +18,15 @@ exemple :
 */
 
 function theaterSieges() {
-  const numbersCol = 26;
-  const numbersSiege = 100;
-  col = [];
-  for (let i = 1; i <= numbersCol; i++){
-    for (let j = 1; j <= numbersSiege; j++) {
-      col[i].push(j)
+  const numbersSiege = new Array(26);
+  for (let i = 0; i < numbersSiege.length; i++){
+    numbersSiege[i] = new Array(100);
+    for (let j = 0; j < numbersSiege[i].length; j++) {
+      numbersSiege[i][j] = `${i+1}-${j+1}`;
     }
   }
-  }
-  
-
+  return numbersSiege;
+}
 console.log(theaterSieges());
 
 module.exports = theaterSieges;

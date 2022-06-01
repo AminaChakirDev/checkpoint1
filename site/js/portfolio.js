@@ -42,7 +42,7 @@ buttonTextColr.addEventListener("click", function() {
     nameToModify.style.color = "white";
 });
 
-//Bonus1 : modifier les textes " you can modify"
+//Bonus2 : modifier les textes " you can modify"
 //je recupère le bouton dans une variable
 const devButton = document.querySelector(".blockButton");
 //je selectionne les li
@@ -55,3 +55,4 @@ devButton.addEventListener("click", function(event) {
         liModify[i].innerHTML = arrayDev[i];
     }
 })
+
