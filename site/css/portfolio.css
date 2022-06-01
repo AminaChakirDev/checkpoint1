@@ -99,13 +99,19 @@ p {
   text-align: center;
 }
 /*bouton modify text and color*/
-.textColorButton {
+.mainButton {
   background-color: rgb(255, 164, 179);
+}
+.textColorButton {
   height: 50px;
   width: 10%;
   border: white 1px solid;
   color: white;
   border-radius: 10px;
+}
+.blockButton {
+  width: 50%;
+  height: 30px;
 }
 
 /*MediaQuery responsive*/
