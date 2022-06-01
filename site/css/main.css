@@ -36,8 +36,8 @@ button:focus {
 .banniere p {
   padding: 0;
 }
-
-.navbar {
+/* initialement ajouté dans le mediaQuery min-with 700px mais ne rend pas comme sur la video de la step 3*/
+.navbar { 
   display: flex;
   justify-content: space-between;
 }
@@ -47,6 +47,13 @@ button:focus {
   align-items : center;
 }
 
+/*MediaQuery responsive*/
+@media screen and (min-width: 700px){
+  .skills {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 700px) {
   .desktop {
     display: none;
