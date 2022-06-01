@@ -38,8 +38,8 @@ function findAdults(arr) {
   mens.forEach(names => {
       mensInlist.push(names);       
   });
-  result.push(womensInlist)
-  result.push(mensInlist)
+  result.push(womensInlist);
+  result.push(mensInlist);
   return result;
   };
 module.exports = findAdults;
