@@ -50,9 +50,21 @@ const liModify = document.querySelectorAll(".liModify");
 //je créer un tableau avec les données de sortie
 let arrayDev = ["VS Code", "GitHub", "Terminal"];
 //je crée un addeventlistener sur devButton pour changer les li
-devButton.addEventListener("click", function(event) {
+devButton.addEventListener("click", function() {
     for (let i=0; i < liModify.length; i++) {
         liModify[i].innerHTML = arrayDev[i];
     }
 })
 
+//superBonus ajouter les element saisie par l'utilisateur
+//je recupere l'element input, bouton, et le ul
+
+const addButton = document.querySelector(".addButton");
+const ulElement = document.querySelector(".devToolElement");
+//je fais un addeventListener sur le bouton pour générer un action au clique
+addButton.addEventListener("click", function(){
+    const inputUser = document.querySelector("#inputText").value;
+    const newLi = document.createElement("li");
+    newLi.innerHTML = inputUser;
+    ulElement.appendChild(newLi);
+})

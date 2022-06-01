@@ -71,6 +71,9 @@
 img {
   max-width: 100%;
 }
+.projects{
+  text-align: center;
+}
 
 .projects a {
   color: #750ff7;
@@ -112,6 +115,11 @@ p {
 .blockButton {
   width: 50%;
   height: 30px;
+}
+.addButton {
+  border-radius: 5px;
+  width: 50px;
+  height: 23px;
 }
 
 /*MediaQuery responsive*/
