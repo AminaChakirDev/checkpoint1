@@ -32,14 +32,14 @@ function findAdults(arr) {
   const adults = arr.filter(adult => adult.age >= 18);
   const womens = adults.filter(woman => woman.sex == "female");
   womens.forEach(names => {
-      mensInlist.push(names);
+      womensInlist.push(names);
   });
   const mens = adults.filter(man => man.sex == "male");
   mens.forEach(names => {
-      womensInlist.push(names);       
+      mensInlist.push(names);       
   });
-  result.push(mensInlist)
   result.push(womensInlist)
+  result.push(mensInlist)
   return result;
   };
 module.exports = findAdults;
