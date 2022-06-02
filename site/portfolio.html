@@ -13,18 +13,25 @@
       <nav class="navbar">
         <img src="image/logo.svg" class="logo" alt="my-logo" />
         <div class="menu">
-          <a href="home.html">Instructions</a>
-          <a href="portfolio.html">Portfolio</a>
+          <a class="link" href="home.html">Instructions</a>
+          <a class="link" href="portfolio.html">Portfolio</a>
         </div>
       </nav>
     </header>
     <main class="container">
+      <section class="mainBanniere">
       <!-- First banner with title, description, avatar and image desktop -->
       <!-- You can use the avatar image on the folder image -->
-      <section class="introduction">
-        <figure class="desktop">
-          <img src="image/desktop.svg" alt="desktop" />
-        </figure>
+        <div class="banniere">
+          <h3>FullStack Developer</h3>
+          <p>I code beautifilly simple things, and I love what I do.</p>
+          <div><img class="imgBan" src="image/avatar-bis.png" alt=""></div>
+        </div>
+        <section class="introduction">
+          <figure class="desktop">
+            <img src="image/desktop.svg" alt="desktop" />
+          </figure>
+        </section>
       </section>
 
       <!-- Second banner with description of your name and your presentation -->
@@ -32,6 +39,7 @@
         <div class="description pink-bg">
           <h2>Hi, I’m <span id="name">Matt</span>. Nice to meet you.</h2>
           <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
+          <button class="mainButton textColorButton ">Modify text and color</button>
         </div>
 
         <!-- Bloc of list of skill front end and back end -->
@@ -44,9 +52,13 @@
               <h2 class="pink-text">Languages I speak:</h2>
               <p>MySql</p>
               <h2 class="pink-text">Dev Tools:</h2>
-              <ul>
+              <ul class="devToolElement">
                 <li>VScode</li>
               </ul>
+              <div class="inputSection">
+                <input type="text" name="inputDev" id="inputText">
+                <button class = "mainButton textColorButton addButton">Add</button>
+              </div>
             </figure>
           </div>
           <div class="column">
@@ -58,10 +70,11 @@
               <p>HTML, CSS</p>
               <h2 class="pink-text">Dev Tools:</h2>
               <ul id="front-dev-tools">
-                <li>You can modify</li>
-                <li>You can modify</li>
-                <li>You can modify</li>
+                <li class="liModify">You can modify</li>
+                <li class="liModify">You can modify</li>
+                <li class="liModify">You can modify</li>
               </ul>
+              <button class="mainButton textColorButton blockButton">Modify</button>
             </figure>
           </div>
         </div>
