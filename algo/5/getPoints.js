@@ -15,7 +15,16 @@ de points de notre équipe à la fin du championnat
 const scores = ['1:0', '2:0', '3:0', '4:4', '2:2', '3:3', '1:4', '2:3', '2:4', '3:3'];
 
 function getPoints(array) {
-  // Your code here !
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    const chars = array[i].split("");
+    if (chars[0] > chars[2]) {
+      sum = sum + 3;
+    } else if (chars[0] == chars[2]) {
+      sum = sum + 1;
+    }
+  }
+  return sum;
 }
 
 module.exports = getPoints;
